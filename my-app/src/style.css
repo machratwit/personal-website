@@ -1,6 +1,8 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
 @import "tailwindcss";
 @theme {
   --color-midnight: #121212;
   --color-navcolor: #1e1e1e;
   --color-txtcolor: #e0e0e0;
+  --font-raleway: "Raleway", sans-serif;
 }

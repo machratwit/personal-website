@@ -18,12 +18,11 @@ const Navbar = () => {
       <br></br>
       <br></br>
       <br></br>
-      <header className="fixed top-0 left-0 right-0 z-50 bg-navcolor text-txtcolor backdrop-blur-md">
-        <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className=" p-4 flex justify-between items-center">
+      <header className="fixed top-0 left-0 right-0 z-50 bg-midnight/70 text-txtcolor backdrop-blur-md">
+        <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-20">
+          <div className=" p-10 flex justify-between items-center">
             <div className="flex-shrink-0">
-              <h1 className="text-xl font-bold">My Portfolio</h1>{" "}
-              {/* Put logo or name */}
+              <h1 className="text-xl">My Portfolio</h1> {/* Put logo or name */}
             </div>
             <div className="ml-10 flex items-baseline space-x-8">
               {navItems.map((item) => (
