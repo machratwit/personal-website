@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { TypeAnimation } from "react-type-animation";
-import { FaLinkedin, FaGithub } from "react-icons/fa";
+import { FaLinkedin, FaGithub, FaArrowDown } from "react-icons/fa";
 import { MdOutlineEmail } from "react-icons/md";
 
 const Home = () => {
@@ -28,7 +28,7 @@ const Home = () => {
         id="home"
         className="flex flex-col items-center space-y-6 scroll-mt-50"
       >
-        <div className="text-txtcolor text-4xl/relaxed font-bold text-center">
+        <div className="text-txtcolor text-5xl/relaxed font-bold text-center">
           <TypeAnimation
             sequence={["Hi, my name is Rodney\n"]}
             style={{ whiteSpace: "pre-line" }}
@@ -60,31 +60,34 @@ const Home = () => {
             />
           )}
         </div>
-        <div className="flex justify-center space-x-6 mt-1 text-txtcolor text-4xl/relaxed">
-          <a
-            href="https://www.linkedin.com/in/rodneymach/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="p-3 rounded-full bg-white/10 hover:bg-white/20 transition-all duration-300 hover:scale-110"
-          >
-            <FaLinkedin size={24} />
-          </a>
-          <a
-            href="https://github.com/machratwit"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="p-3 rounded-full bg-white/10 hover:bg-white/20 transition-all duration-300 hover:scale-110"
-          >
-            <FaGithub size={24} />
-          </a>
-          <a
-            href="mailto:rodney.mach123@gmail.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="p-3 rounded-full bg-white/10 hover:bg-white/20 transition-all duration-300 hover:scale-110"
-          >
-            <MdOutlineEmail size={24} />
-          </a>
+        <div className="flex flex-col items-center space-y-6 mt-5 text-txtcolor text-4xl/relaxed">
+          <div className="flex space-x-8">
+            <a
+              href="https://www.linkedin.com/in/rodneymach/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="p-3 rounded-full bg-white/10 hover:bg-white/20 transition-all duration-300 hover:scale-110"
+            >
+              <FaLinkedin size={24} />
+            </a>
+            <a
+              href="https://github.com/machratwit"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="p-3 rounded-full bg-white/10 hover:bg-white/20 transition-all duration-300 hover:scale-110"
+            >
+              <FaGithub size={24} />
+            </a>
+            <a
+              href="mailto:rodney.mach123@gmail.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="p-3 rounded-full bg-white/10 hover:bg-white/20 transition-all duration-300 hover:scale-110"
+            >
+              <MdOutlineEmail size={24} />
+            </a>
+          </div>
+          <FaArrowDown size={30} className="animate-bounce mt-50" />
         </div>
       </div>
     </>
