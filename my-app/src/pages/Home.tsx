@@ -66,7 +66,7 @@ const Home = () => {
               href="https://www.linkedin.com/in/rodneymach/"
               target="_blank"
               rel="noopener noreferrer"
-              className="p-3 rounded-full bg-white/10 hover:bg-white/20 transition-all duration-300 hover:scale-110"
+              className="p-3 rounded-full bg-white/10 hover:bg-blue-400/60 transition-all duration-300 hover:scale-110"
             >
               <FaLinkedin size={24} />
             </a>
@@ -74,7 +74,7 @@ const Home = () => {
               href="https://github.com/machratwit"
               target="_blank"
               rel="noopener noreferrer"
-              className="p-3 rounded-full bg-white/10 hover:bg-white/20 transition-all duration-300 hover:scale-110"
+              className="p-3 rounded-full bg-white/10 hover:bg-blue-400/60 transition-all duration-300 hover:scale-110"
             >
               <FaGithub size={24} />
             </a>
@@ -82,7 +82,7 @@ const Home = () => {
               href="mailto:rodney.mach123@gmail.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="p-3 rounded-full bg-white/10 hover:bg-white/20 transition-all duration-300 hover:scale-110"
+              className="p-3 rounded-full bg-white/10 hover:bg-blue-400/60 transition-all duration-300 hover:scale-110"
             >
               <MdOutlineEmail size={24} />
             </a>

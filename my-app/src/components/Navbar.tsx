@@ -29,9 +29,15 @@ const Navbar = () => {
                 <a
                   key={item.id}
                   href={`#${item.id}`}
-                  className={`px-3 py-2 text-sm font-medium transition-colors hover:text-blue-500`} // Show underline when hover
+                  className={`group px-3 py-2 text-sm font-medium transition-colors hover:text-blue-400`}
                 >
-                  {item.label}
+                  <span
+                    className="relative after:content-[''] after:absolute after:left-1/2 after:bottom-0 after:w-0
+                    after:h-[2px] after:bg-blue-400 after:translate-y-1 after:transition-all after:duration-200 group-hover:after:w-full
+                    group-hover:after:left-0"
+                  >
+                    {item.label}
+                  </span>
                 </a>
               ))}
             </div>
