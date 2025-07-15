@@ -1,28 +1,20 @@
-// const About = () => {
-//   return (
-//     <>
-//       <br></br>
-//       <div id="about" className="px-6 py-12 max-w-4xl mx-auto text-white">
-//         <h2 className="text-3xl font-bold mb-4">About Me</h2>
-//         <p className="text-lg mb-8">
-//           Hi, I’m Rodney{/* {name}, a {role}. {intro} */}
-//         </p>
-//       </div>
-//     </>
-//   );
-// };
-// export default About;
 import { experience, type ExperienceItem } from "../data/experience";
 import { education, type EducationItem } from "../data/education";
 import { skills } from "../data/skills";
 
 export default function About() {
-  const name = "Rodney";
-  const role = "Frontend Developer";
-  const intro = "I enjoy building beautiful, accessible web experiences.";
+  const name = "Rodney Mach";
+  const role = "college Student";
+  const intro = `I love building clean, user-friendly websites that look good and work well.
+  I'm especially interested in cybersecurity and solving problems with simple solutions.
+  When I'm not coding, you’ll probably find me building custom PCs or learning about new tech.
+  I enjoy taking on challenges and turning ideas into real, usable things people enjoy.`;
 
   return (
-    <section id="about" className="px-6 py-12 max-w-4xl mx-auto text-white">
+    <section
+      id="about"
+      className="px-6 py-12 max-w-4xl pt-24 scroll-mt-24 mx-auto text-white"
+    >
       <h2 className="text-3xl font-bold mb-4">About Me</h2>
       <p className="text-lg mb-8">
         Hi, I’m {name}, a {role}. {intro}
@@ -37,7 +29,7 @@ export default function About() {
               <h4 className="font-medium">
                 {item.role} at {item.company}
               </h4>
-              <p className="text-sm text-gray-600">{item.date}</p>
+              <p className="text-sm text-gray-600">{item.duration}</p>
               <p className="text-sm">{item.description}</p>
             </div>
           ))}

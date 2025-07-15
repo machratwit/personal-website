@@ -10,14 +10,6 @@ const Navbar = () => {
   ];
   return (
     <>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
       <header className="fixed top-0 left-0 right-0 z-50 bg-midnight/70 text-txtcolor backdrop-blur-md">
         <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-20">
           <div className=" p-10 flex justify-between items-center">
@@ -33,8 +25,8 @@ const Navbar = () => {
                 >
                   <span
                     className="relative after:content-[''] after:absolute after:left-1/2 after:bottom-0 after:w-0
-                    after:h-[2px] after:bg-blue-400 after:translate-y-1 after:transition-all after:duration-200 group-hover:after:w-full
-                    group-hover:after:left-0"
+                    after:h-[2px] after:bg-blue-400 after:translate-y-1 after:transition-all after:duration-300 
+                    group-hover:after:w-full group-hover:after:left-0"
                   >
                     {item.label}
                   </span>
