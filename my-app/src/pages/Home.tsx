@@ -26,7 +26,7 @@ const Home = () => {
     <>
       <div
         id="home"
-        className="flex flex-col items-center space-y-6 scroll-mt-50"
+        className="flex flex-col items-center justify-center space-y-6 min-h-screen scroll-mt-24 pt-24"
       >
         <div className="text-txtcolor text-5xl/relaxed font-bold text-center">
           <TypeAnimation

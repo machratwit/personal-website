@@ -5,5 +5,7 @@ export const skills: string[] = [
   "Next.js",
   "Tailwind CSS",
   "Git",
-  "Figma",
+  "Python",
+  "Java",
+  "Wireshark"
 ];
