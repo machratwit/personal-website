@@ -5,7 +5,7 @@ const Projects = () => {
   return (
     <section
       id="projects"
-      className="px-4 py-20 max-w-6xl pt-24 mx-auto scroll-mt-24 "
+      className="min-h-screen px-4 py-20 max-w-6xl pt-24 mx-auto scroll-mt-24 "
     >
       <h1 className="text-4xl font-bold text-center text-white mb-12">
         Projects

@@ -27,7 +27,7 @@ export default function Contacts() {
   return (
     <section
       id="contact"
-      className="px-4 py-20 max-w-3xl mx-auto pt-24 scroll-mt-24 text-white"
+      className="min-h-screen px-4 py-20 max-w-3xl mx-auto pt-15 scroll-mt-24 text-white"
     >
       <h1 className="text-3xl font-bold text-center mb-12">Get in touch</h1>
       <div className="grid gap-4 sm:grid-cols-2">
