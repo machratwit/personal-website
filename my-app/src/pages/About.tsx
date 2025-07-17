@@ -29,7 +29,7 @@ export default function About() {
               <h4 className="font-medium">
                 {item.role} at {item.company}
               </h4>
-              <p className="text-sm text-gray-600">{item.duration}</p>
+              <p className="text-sm text-gray-400">{item.duration}</p>
               <p className="text-sm">{item.description}</p>
             </div>
           ))}
@@ -41,7 +41,7 @@ export default function About() {
           {education.map((item: EducationItem, index: number) => (
             <div key={index} className="mb-4">
               <h4 className="font-medium">{item.degree}</h4>
-              <p className="text-sm text-gray-600">
+              <p className="text-sm text-gray-400">
                 {item.school}, {item.duration}
               </p>
             </div>

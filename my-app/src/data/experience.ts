@@ -12,13 +12,13 @@ export const experience: ExperienceItem[] = [
     role: "Information Technology Technician’s Assistant",
     duration: "January 2024 - April 2024",
     location: "Quincy, MA",
-    description: "WORK"
+    description: ""
   },
   {
     company: "Whitehead Institute of Biomedical Research",
     role: "Technical Support Specialist",
     duration: "September 2024 - December 2024",
     location: "Cambridge, MA",
-    description: "WORK"
+    description: ""
   },
 ];
