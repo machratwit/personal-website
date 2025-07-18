@@ -1,6 +1,3 @@
-import React from "react";
-import { Link } from "react-router-dom";
-
 const Navbar = () => {
   const navItems = [
     { id: "home", label: "Home" },
