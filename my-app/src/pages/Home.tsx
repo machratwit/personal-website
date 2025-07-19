@@ -26,42 +26,44 @@ const Home = () => {
     <>
       <div
         id="home"
-        className="flex flex-col items-center justify-center space-y-6 min-h-screen scroll-mt-24 pt-24"
+        className="flex flex-col items-center justify-center space-y-8 min-h-screen scroll-mt-24 pt-40"
       >
-        <div className="text-txtcolor text-5xl/relaxed font-bold text-center">
-          <TypeAnimation
-            sequence={["Hi, my name is Rodney\n"]}
-            style={{ whiteSpace: "pre-line" }}
-            wrapper="span"
-            cursor={false}
-            speed={25}
-            repeat={0}
-          />
-          {showBroke && (
+        <div className="text-txtcolor text-3xl/relaxed sm:text-4xl/relaxed lg:text-5xl/relaxed font-bold text-center min-h-[7rem] flex flex-col justify-center">
+          <div className="h-[4rem] sm:h-[4.5rem] lg:h-[3.5rem]">
             <TypeAnimation
-              sequence={["I am broke", 100]}
+              sequence={["Hi, my name is Rodney\n"]}
+              style={{ whiteSpace: "pre-line" }}
               wrapper="span"
-              speed={25}
               cursor={false}
+              speed={25}
               repeat={0}
             />
-          )}
-          {showLoop && (
-            <TypeAnimation
-              sequence={[
-                "I am interested in web development",
-                1000,
-                "I am interested in cybersecurity",
-                1000,
-              ]}
-              wrapper="span"
-              speed={25}
-              repeat={Infinity}
-            />
-          )}
+            {showBroke && (
+              <TypeAnimation
+                sequence={["I am broke", 100]}
+                wrapper="span"
+                speed={25}
+                cursor={false}
+                repeat={0}
+              />
+            )}
+            {showLoop && (
+              <TypeAnimation
+                sequence={[
+                  "I am interested in web development",
+                  1000,
+                  "I am interested in cybersecurity",
+                  1000,
+                ]}
+                wrapper="span"
+                speed={25}
+                repeat={Infinity}
+              />
+            )}
+          </div>
         </div>
-        <div className="flex flex-col items-center space-y-6 mt-5 text-txtcolor text-4xl/relaxed">
-          <div className="flex space-x-8">
+        <div className="flex flex-col items-center space-y-8 mt-12 md:mt-20 text-txtcolor text-4xl/relaxed">
+          <div className="flex space-x-8 sm:space-x-10">
             <a
               href="https://www.linkedin.com/in/rodneymach/"
               target="_blank"
@@ -87,7 +89,7 @@ const Home = () => {
               <MdOutlineEmail size={24} />
             </a>
           </div>
-          <FaArrowDown size={30} className="animate-bounce mt-50" />
+          <FaArrowDown size={30} className="animate-bounce mt-40 md:mt-60" />
         </div>
       </div>
     </>
