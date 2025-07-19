@@ -7,7 +7,7 @@ const contactMethods = [
     icon: MdOutlineEmail,
     label: "Email",
     value: "rodney.mach123@gmail.com",
-    href: "mailto:rodney.mach123@gmai.com",
+    href: "mailto:rodney.mach123@gmail.com",
   },
   {
     icon: FaLinkedin,
@@ -27,7 +27,7 @@ export default function Contacts() {
   return (
     <section
       id="contact"
-      className="min-h-screen px-4 py-20 max-w-3xl mx-auto pt-15 scroll-mt-24 text-white"
+      className="min-h-screen px-4 py-20 max-w-3xl mx-auto pt-24 scroll-mt-24 text-white"
     >
       <h1 className="text-3xl font-bold text-center mb-12">Get in touch</h1>
       <div className="grid gap-4 sm:grid-cols-2">
@@ -70,7 +70,7 @@ export default function Contacts() {
             </label>
             <input
               id="email"
-              type="text"
+              type="email"
               className="w-full bg-zinc-800 border border-zinc-600 
               rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
               placeholder="you@example.com"
