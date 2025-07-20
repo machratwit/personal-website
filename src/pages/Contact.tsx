@@ -57,10 +57,8 @@ export default function Contacts() {
     setError("");
     setSubmitted(true);
 
-    // Replace this with actual email service or backend call
-    console.log("Form submitted:", formData);
     try {
-      const res = await fetch("http://localhost:3001/api/contact", {
+      const res = await fetch(`${import.meta.env.VITE_API_URL}/api/contact`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formData),
