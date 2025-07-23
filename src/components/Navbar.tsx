@@ -1,6 +1,9 @@
 import { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
+import { motion, useScroll } from "framer-motion";
+
 const Navbar = () => {
+  const { scrollYProgress } = useScroll();
   const [isOpen, setIsOpen] = useState(false);
   const navItems = [
     { id: "home", label: "Home" },
@@ -10,6 +13,19 @@ const Navbar = () => {
   ];
   return (
     <>
+      <motion.div
+        id="scroll-indicator"
+        style={{
+          scaleX: scrollYProgress,
+          position: "fixed",
+          top: 0,
+          left: 0,
+          right: 0,
+          height: 10,
+          originX: 0,
+        }}
+        className="bg-blue-500"
+      />
       <header className="fixed top-0 left-0 right-0 z-50 bg-midnight/70 text-txtcolor backdrop-blur-md">
         <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-20">
           <div className="p-10 flex justify-between items-center">
