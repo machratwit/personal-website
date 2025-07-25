@@ -7,5 +7,5 @@ export const skills: string[] = [
   "Git",
   "Python",
   "Java",
-  "Wireshark"
+  "Wireshark",
 ];

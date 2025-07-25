@@ -5,15 +5,15 @@ on: push
 permissions:
   contents: read
   checks: write
-  
-jobs: 
+
+jobs:
   super-lint:
     name: Lint Code
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
         uses: actions/checkout@v4.2.2
-        
+
       - name: Run Super-Linter
         uses: super-linter/super-linter@v8.0.0
 
