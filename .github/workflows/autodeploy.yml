@@ -35,7 +35,7 @@ jobs:
           username: ${{ secrets.LIGHTSAIL_USER }}
           key: ${{ secrets.LIGHTSAIL_KEY }}
           source: "dist/*"
-          target: ${{ secrets.LIGHTSAIL_TARGET_DIR }
+          target: ${{ secrets.LIGHTSAIL_TARGET_DIR }}
 
       - name: Reload Nginx
         uses: appleboy/ssh-action@v1.0.0
