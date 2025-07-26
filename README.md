@@ -1,3 +1,3 @@
 # Personal Website
 
-rodneymach.dev
+rodneymach.dev 
