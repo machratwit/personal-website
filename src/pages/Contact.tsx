@@ -34,6 +34,7 @@ export default function Contacts() {
 
   const [error, setError] = useState("");
   const [submitted, setSubmitted] = useState(false);
+  const [disabled, setDisabled] = useState(false);
 
   const validateEmail = (email: string) => {
     const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -57,6 +58,7 @@ export default function Contacts() {
 
     setError("");
     setSubmitted(true);
+    setDisabled(true);
 
     try {
       const res = await fetch(`${import.meta.env.VITE_API_URL}/api/contact`, {
@@ -158,6 +160,7 @@ export default function Contacts() {
             </div>
             <button
               type="submit"
+              disabled={disabled}
               className="inline-flex items-center justify-center bg-blue-500 hover:bg-blue-600 font-medium rounded-lg px-6 py-2 transition"
             >
               Send
