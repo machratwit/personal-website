@@ -28,6 +28,14 @@ jobs:
       - name: Build project
         run: npm run build
 
+      - name: Remove /dist in Lightsail
+        uses: appleboy/ssh-action@v1.0.0
+        with:
+          host: ${{ secrets.LIGHTSAIL_HOST }}
+          username: ${{ secrets.LIGHTSAIL_USER }}
+          key: ${{ secrets.LIGHTSAIL_KEY }}
+          script: rm -rf "${{ secrets.LIGHTSAIL_TARGET_DIR }}"/* "${{ secrets.LIGHTSAIL_TARGET_DIR }}"/.[!.]*
+
       - name: Copy /dist to Lightsail
         uses: appleboy/scp-action@v0.1.7
         with:
